@@ -2,10 +2,42 @@
 
 The archived repo of "Smart Web Design Scraper" graduation project.
 
+
+Web Design Scraper is a tool to extract objective web design measurements from a web page. This repo contains the early implementation of the web design scraping concept that we coined in [our research paper](https://ieeexplore.ieee.org/abstract/document/9271770).
+
+
 ![screenshots](images/screenshots.jpg)
 
 
 Note : this project was created while Node 14 was the latest version of node so it will work with no problems on that version and the project is not tested on newer versions of NodeJS.
+
+## Project Goals
+
+The extracted web design measurements from this tool can be used for:
+- Auditing web designs through objective measurements
+- Understanding and comparing web design patterns between different websites
+
+The JSON output can also be used as machine learning inputs for:
+- Predicting the usability of websites
+- Classifying website based on certain design measurements
+- Scoring website quality and design aesthetic
+
+## Extracted Design Information
+
+Currently this tool can extract the following design information:
+- Symmetry
+- Complexity
+- Density
+- Cohesion
+- Economy
+- Simplicty
+- Font size families
+- Text size distribution
+- Color count rank
+- Vibrant colors
+
+There are [more measurements](./web-design-factors.md) planned to be included in this tool.
+
 
 ## Technologies
 
@@ -66,6 +98,20 @@ npm run watch
 # Run docker
 docker-compose up
 ```
+
+
+## Future Development
+
+- [ ] Implement user configuration
+- [ ] Implement [more measurements](./web-design-factors.md)
+- [ ] Allow users to analyze displayed viewport only
+- [ ] Compile for Puppeteer to allow analyzing webpages through CLI
+- [ ] Use WebWorker to optimize performance
+
+## Research Paper
+
+- A. Namoun, A. Alshanqiti, E. Chamudi and M. A. Rahmon, "Web Design Scraping: Enabling Factors, Opportunities and Research Directions," 2020 12th International Conference on Information Technology and Electrical Engineering (ICITEE), Yogyakarta, 2020, pp. 104-109, doi: [10.1109/ICITEE49829.2020.9271770.](https://ieeexplore.ieee.org/abstract/document/9271770)
+
 
 ## Authors
 - Ezzat Chamudi
